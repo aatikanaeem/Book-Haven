@@ -1,0 +1,99 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Body styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('pictures/academia.jpeg') no-repeat center center/cover;
+    background-attachment:fixed; /* Ensures it stays in place */
+}
+
+/* Form container */
+.form {
+    width: 420px;
+    background: rgba(0, 168, 107, 0.8); /* Semi-transparent background */
+    color: white;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 0 50px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Heading styling */
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input containers */
+.name, .email, .pass {
+    width: 100%;
+    height: 45px;
+    margin: 15px 0;
+    position: relative;
+}
+
+.name input, .email input, .pass input {
+    width: 100%;
+    height: 90%;
+    padding: 10px 40px 10px 10px;
+    border: none;
+    border-radius: 5px;
+    background: #9ACD32;
+    color: white;
+    font-size: 16px;
+    outline: none;
+}
+
+.name input::placeholder, .email input::placeholder, .pass input::placeholder {
+    color: white;
+}
+
+/* Icon styling */
+.name i, .pass i {
+    position: absolute;
+    right: 10px;
+    top: 90%;
+    transform: translateY(-40%);
+    font-size: 20px;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #006400;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background: #004d00;
+}
+
+/* Link styling */
+a {
+    display:block;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
